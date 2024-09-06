@@ -1,0 +1,55 @@
+.animated-header-name {
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 8s steps(44) 1s infinite normal both,
+      blinkTextCursor 500ms infinite;
+}
+
+.animated-header-designation {
+    font-weight: bold;
+    letter-spacing: 7px;
+    white-space: nowrap;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 710px;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: hsl(0, 0%, 80%);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        opacity:1;
+    }
+    25%{
+        opacity:0.75;
+    }
+    50%{
+        opacity:0.50;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+.text-animated-one{
+    animation:fade-in 4s infinite;
+
+}
