@@ -1,73 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Dev Patel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dev Patel - Portfolio </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Icons -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/da103a00e4.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Box Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <ul class="nav bg-warning justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Education</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
-    </ul>
 
-    <br/>
-    <br/>
+<body class="index-page">
 
-    <div class="container" style="max-width: 100%">
-        <div class="row">
-          <div class="col-4">
-            <div class="container text-center">
-                <img src="DP.png" class="rounded-circle" alt="Circular Image" width="100" heigh="100">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="ass÷ets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Dev Patel</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/dev-patel-540a84233/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Devpatel1901" class="github"><i class="bi bi-github"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li class="active"><a href="#main"><i class="bx bx-home navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user navicon"></i> <span>About</span></a></li>
+        <li><a href="#skills"><i class="bx bx-bulb navicon"></i> <span>Skills</span></a></li>
+        <li><a href="#resume"><i class="bx bx-file-blank navicon"></i> <span>Resume</span></a></li>
+        <li><a href="#projects"><i class="bx bx-server navicon"></i> <span>Projects</span></a></li>
+        <li><a href="#testimonials"><i class="bx bx-server navicon"></i> <span>Recommendations</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+        <h1>Dev Patel</h1>
+        <p>I'm <span class="typed" data-typed-items="a Software Engineer, a Student, a Learner">a Software Engineer</span><span class="typed-cursor typed-cursor--blink">|</span></p>
+      </div>
+  
+      <div class="social-icons aos-init aos-animate" data-aos="fade-in">
+        <a class="social-icon" href="https://www.linkedin.com/in/dev-patel-540a84233/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a class="social-icon" href="https://github.com/Devpatel1901"><i class="fab fa-github" aria-hidden="true"></i></a>
+        
+      </div>
+  
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hi, I am Dev Patel, a graduate student of computer science at Indiana University Bloomington.
+
+          I have a good knowledge and hands on experience of Web Development, Web Design, Technical Documentation Writing of a software. I believes that software engineer doesn't know all the things before hand but he can learn any skills when it will needed.
+          
+          After graduation, I took 6-month internship at Crest Data, where I learnt about all the agile methodologies and tools like JIRA, Bitbucket, Confluence etc. After that, I accepted a job offer from same company and joined a dynamic team as a software engineer which will be creating SIEM integration on Datadog platform. As a software engineer, I have responsibility to create user requirement docs, coding and after that product presentation to all stack holders.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-12 content">
+            <h2>Software Engineer &amp; Full Stack Engineer</h2>
+            <p class="fst-italic py-3">
+              Adapt Software Engineer with a proven track record at Crest Data, enhancing application performance and customer satisfaction through innovative solutions in Python and seamless data integration. Excelled in cross- functional collaboration and rigorous code reviews, demonstrating strong analytical skills and a commitment to code quality. Skilled in C++, JavaScript, and effective project management.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 8128780868</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bloomington, Indiana, USA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Undergraduate Degree:</strong> <span>Bachelor Of Technology in Comuter Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Graduate Degree:</strong> <span>Master Of Science in Computer Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:pateldev1901@yahoo.com"> pateldev1901@yahoo.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance or Startup Idea:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="container text-center animated-header-name">
-                <h1>Dev Patel</h1>
-            </div>
-            <div class="text-center text-decoration-underline animated-header-designation">
-                <div class="text-animated-one">a Student</div>    
-                <div class="text-animated-one">s Software Enginner</div>            
-            </div>
-          </div>
-          <div class="col-4">
-                <div class="container">
-                    <div class="d-flex flex-row bd-highlight mb-3 justify-content-around">
-                        <div class="p-2 bd-highlight">
-                            <button class="btn btn-primary" type="button">LinkedIn</button>
-                        </div>
-                        <div class="p-2 bd-highlight">
-                            <button class="btn btn-dark" type="button">Github</button>
-                        </div>
-                        <div class="p-2 bd-highlight">
-                            <button class="btn btn-warning" type="button">Leetcode</button>
-                        </div>
-                    </div>
-                </div>
           </div>
         </div>
-    </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>C/C++</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>ReactJS</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+        </div>
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>NodeJS</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>FastAPI</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Datadog</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Splunk</span> <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Docker</span> <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Git</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>JIRA</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Confluence</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p><em>Innovative and deadline-driven Software Engineer with 1.2+ years of experience designing and developing robust and scalable software which satisfies customer needs.</em></p>
+        <p><a class="btn btn-dark" href="https://drive.google.com/drive/folders/1qh0SJUmSU0ZEMZKUV43uM07hYBqoL0Nd" role="button" style="margin-bottom: 15px;margin-left: 10px;margin-top: 30px;">View Resume</a></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row container">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Dev Patel</h4>
+              <ul>
+                <li>Bloomington, Indiana</li>
+                <li>(812) 878-0868</li>
+                <li><a href="mailto:pateldev1901@yahoo.com">pateldev1901@yahoo.com</a></li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Computer Science</h4>
+              <h5>2024 - 2026</h5>
+              <p><em>Indiana University, Bloomington, IN</em></p>
+              <p>Relevant Coursework:<li>Applied Algorithms</li><li>Applied Machiner Learning</li><li>Software Engineering Systems - I</li></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Technology in Computer Engineering</h4>
+              <h5>2019 - 2023</h5>
+              <p><em>Dharmsinh Desai University, Nadiad, Gujarat, India</em></p>
+              <p>Relevant Coursework: <ul><li>Data Structures and Algorithms</li><li>Object Oriented Programming in C++</li><li>Operating Systems</li><li>Computer Networks</li><li>Software Development Practice</li><li>Software Engineering</li></ul></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>Crest Data, Ahmedabad, Gujarat, India</em></p>
+              <ul>
+                <li>Developed and maintained connectors in python for Datadog SIEM tools, facilitating seamless data integration and ensuring optimal performance and reliability of monitoring systems.</li>
+                <li>Authored detailed technical documentation, including user guides, system architecture diagrams, and troubleshooting manuals, to support implementation and usage of Datadog solutions. </li>
+                <li>Presented live demonstrations and walkthroughs of Datadog integrations and features to stakeholders, effectively showcasing the benefits and functionalities of the tools and addressing any technical queries or concerns.</li>
+                <li>By customizing and deploying these connectors, I enabled clients to achieve real-time monitoring of their
+                  infrastructure, significantly enhancing their ability to detect and respond to threats.</li>
+                <li>This proactive approach not only improved their security posture but also led to a remarkable 65% reduction
+                  in costs associated with real-time attack mitigation.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Full Stack Developer Intern</h4>
+              <h5>05/2022 - 06/2022</h5>
+              <p><em>Infinity IT Solutions, Surat, Gujarat, India</em></p>
+              <ul>
+                <li>Worked on a concept project of Datadog python connectors, Dashboard creation and gives stackholder demo as well.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <section id="projects" class="portfolio">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+  
+        <div class="row portfolio-container container">
+  
+          <!-- Project 1: Management Quota Admission -->
+          <div class="col-lg-6 portfolio-item">
+            <div class="portfolio-details">
+              <h4>Management Quota Admission</h4>
+              <p>
+                  </p><ul><i>
+                      <li>Worked on fully functional web application which provides automation into admission application</li>
+                      <li>Creatd various backend APIs in NodeJS to support CRUD operations and connect those APIs with frontend which was created into ReactJS</li>
+                      <li>Integrated payment option into web application using third party payment API</li></i>
+                  </ul>
+  
+              <p></p>
+            </div>
+          </div>
+  
+          <!-- Project 2: Personal Expense Manager -->
+          <div class="col-lg-6 portfolio-item">
+            <div class="portfolio-details">
+              <h4>Personal Expense Manager</h4>
+              <p>
+                  </p><ul><i>
+                     <li>Developed a user-friendly React-NodeJS based website for real-time expense manager.<br></li>
+                     <li>Worked on front end, back end and database. Ensure user friendly design and robust NodeJS API and SQL query performance.<br></li>
+                     <li>Integrated visualization of expenses using google graph API.<br></li></i>
+                  </ul>
+              <p></p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recommendations</h2>
+        <p><em>Know more about me from my collegues</em></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="row justify-content-center swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Dev Patel started at Crest as an Intern and during my time working with him, I found dev curious, eager to learn, quick learner, dedicated, hardworking individual who has been keen to take up the challenge assigned to him and deliver to the best of his abilities. I am confident on Dev to deliver his best to any team he works on with in future and any team would surely be lucky to have him onboarded.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <h3>Bhargav Nariyani</h3>
+                <h4>Technical Lead, Engineering @ Crest Data</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Bloomington, IN, USA</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 8128780868</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Address</h3>
+                  <p><a href="mailto:pateldev1901@yahoo.com">pateldev1901@yahoo.com</a></p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <style data-typed-js-cursor-css="true">
+    .typed-cursor{
+      opacity: 1;
+    }
+    .typed-cursor.typed-cursor--blink{
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+              animation: typedjsBlink 0.7s infinite;
+    }
+    @keyframes typedjsBlink{
+      50% { opacity: 0.0; }
+    }
+    @-webkit-keyframes typedjsBlink{
+      0% { opacity: 1; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
 </body>
+
 </html>
