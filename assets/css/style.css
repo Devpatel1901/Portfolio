@@ -703,6 +703,10 @@ img {
   transform: translateX(.25rem);
 }
 
+.portfolio__data{
+  width: 45rem;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
