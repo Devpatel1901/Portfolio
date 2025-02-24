@@ -675,6 +675,9 @@ img {
   visibility: visible;
 }
 
+.project__data{
+  width: 45rem;
+}
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
@@ -701,10 +704,6 @@ img {
 
 .portfolio__button:hover .button__icon {
   transform: translateX(.25rem);
-}
-
-.portfolio__data{
-  width: 45rem;
 }
 
 .swiper-button-prev::after,
@@ -814,6 +813,7 @@ img {
 
 .contact__information {
   display: flex;
+  gap: 30rem;
   margin-bottom: var(--mb-2);
 }
 
@@ -1046,6 +1046,10 @@ footer .footer__social a:hover {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contact__information {
+    gap: 10rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1211,6 +1215,10 @@ footer .footer__social a:hover {
   .footer__copy {
     margin-top: 4.5rem;
   }
+
+  .contact__information {
+    gap: 15rem;
+  }
 }
 
 
@@ -1266,6 +1274,10 @@ footer .footer__social a:hover {
 
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__information {
+    gap: 30rem;
   }
 }
 
